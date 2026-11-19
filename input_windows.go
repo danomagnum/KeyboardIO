@@ -15,7 +15,9 @@ var (
 // The array index is the PLC bit number; keep existing positions stable.
 var virtualKeys = [...]uintptr{
 	0x26, 0x28, 0x25, 0x27, // Up, Down, Left, Right
-	'W', 'A', 'S', 'D',
+	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+	'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+	'u', 'v', 'w', 'x', 'y', 'z',
 	0x20, 0x0D, 0x1B, // Space, Enter, Escape
 	0x10, 0x11, 0x12, // Shift, Ctrl, Alt
 }
