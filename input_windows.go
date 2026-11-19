@@ -18,8 +18,7 @@ var virtualKeys = [...]uintptr{
 	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 	'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
 	'u', 'v', 'w', 'x', 'y', 'z',
-	0x20, 0x0D, 0x1B, // Space, Enter, Escape
-	0x10, 0x11, 0x12, // Shift, Ctrl, Alt
+	0x20, 0x0D, // Space, Enter, Escape
 }
 
 func keyMask(read func(uintptr) uintptr) int32 {

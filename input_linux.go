@@ -17,8 +17,7 @@ var x11Keysyms = [...][]xproto.Keysym{
 	{'a', 'A'}, {'b', 'B'}, {'c', 'C'}, {'d', 'D'}, {'e', 'E'}, {'f', 'F'}, {'g', 'G'}, {'h', 'H'}, {'i', 'I'}, {'j', 'J'},
 	{'k', 'K'}, {'l', 'L'}, {'m', 'M'}, {'n', 'N'}, {'o', 'O'}, {'p', 'P'}, {'q', 'Q'}, {'r', 'R'}, {'s', 'S'}, {'t', 'T'},
 	{'u', 'U'}, {'v', 'V'}, {'w', 'W'}, {'x', 'X'}, {'y', 'Y'}, {'z', 'Z'},
-	{0x20}, {0xff0d, 0xff8d}, {0xff1b}, // Space, Return/keypad Enter, Escape
-	{0xffe1, 0xffe2}, {0xffe3, 0xffe4}, {0xffe9, 0xffea}, // Shift, Ctrl, Alt
+	{0x20}, {0xff0d, 0xff8d}, // Space, Return/keypad Enter, Escape
 }
 
 type x11Desktop struct {

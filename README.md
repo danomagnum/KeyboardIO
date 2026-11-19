@@ -63,18 +63,18 @@ screen containing the pointer, typically the upper-left corner of the combined
 desktop. Bits are 1 while the key is held and 0 when released. The wire payload
 is 12 bytes, little-endian, on both platforms.
 
-| Bit | Key | Bit | Key |
-| --- | --- | --- | --- |
-| 0 | Up | 7 | D |
-| 1 | Down | 8 | Space |
-| 2 | Left | 9 | Enter |
-| 3 | Right | 10 | Escape |
-| 4 | W | 11 | Shift |
-| 5 | A | 12 | Ctrl |
-| 6 | S | 13 | Alt |
+| Bit | Key | Bit | Key | Bit | Key | Bit | Key |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | Up | 8 | E | 16 | M | 24 | U |
+| 1 | Down | 9 | F | 17 | N | 25 | V |
+| 2 | Left | 10 | G | 18 | O | 26 | W |
+| 3 | Right | 11 | H | 19 | P | 27 | X |
+| 4 | A | 12 | I | 20 | Q | 28 | Y |
+| 5 | B | 13 | J | 21 | R | 29 | Z |
+| 6 | C | 14 | K | 22 | S | 30 | Space |
+| 7 | D | 15 | L | 23 | T | 31 | Enter |
 
-Bits 14-31 are reserved and always zero. For example, `KeyboardIO:I.Data[0].0`
-is the Up arrow. The module sends snapshots, not latched events, so a quick tap
+Letter bits ignore case. For example, `KeyboardIO:I.Data[0].0` is the Up arrow. The module sends snapshots, not latched events, so a quick tap
 can be missed between samples or PLC updates. Monitor the connection status in
 PLC logic; do not treat the last received state as fresh after a connection loss.
 This is not safety-rated I/O and should not be used for safety functions.
