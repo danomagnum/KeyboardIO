@@ -12,7 +12,7 @@ var (
 	physicalCursor = user32.NewProc("GetPhysicalCursorPos")
 )
 
-// The array index is the PLC bit number; keep existing positions stable.
+// The array index is the PLC bit number;
 var virtualKeys = [...]uintptr{
 	0x26, 0x28, 0x25, 0x27, // Up, Down, Left, Right
 	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
